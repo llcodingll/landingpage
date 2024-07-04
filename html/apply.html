@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for a Position</title>
+    <link rel="stylesheet" href="../css/apply.css">
+    <link rel="stylesheet" href="../css/default.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="home"><a href="main.html">MyBank</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="sevices.html">Services</a>
+                        <ul class="service-menu">
+                            <li><a href="personal.html">Personal Banking</a></li>
+                            <li><a href="business.html">Business Banking</a></li>
+                            <li><a href="investment.html">Investment Planning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="q&a.html">Q&A</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="height: 50vh;">
+        <div class="container">
+            <h2>Join Our Team</h2>
+            <p>We are looking for talented individuals to join our team.</p>
+        </div>
+    </section>
+
+    <section class="apply-form">
+        <div class="container">
+            <h2 class="h2">Application Form</h2>
+            <div class="job-categories">
+                <nav class="category-nav">
+                    <ul>
+                        <li><a href="#category-1" class="active">Technology</a></li>
+                        <li><a href="#category-2">Finance</a></li>
+                        <li><a href="#category-3">Marketing</a></li>
+                        <li><a href="#category-4">Operations</a></li>
+                    </ul>
+                </nav>
+                <div class="category-content">
+                    <div id="category-1" class="category-item active">
+                        <h3>Technology Positions</h3>
+                        <ul>
+                            <li><a href="#" class="job-link" data-target="software-engineer">Software Engineer</a></li>
+                            <li><a href="#" class="job-link" data-target="data-scientist">Data Scientist</a></li>
+                            <li><a href="#" class="job-link" data-target="systems-analyst">Systems Analyst</a></li>
+                        </ul>
+                    </div>
+                    <div id="category-2" class="category-item">
+                        <h3>Finance Positions</h3>
+                        <ul>
+                            <li><a href="#" class="job-link" data-target="financial-analyst">Financial Analyst</a></li>
+                            <li><a href="#" class="job-link" data-target="investment-banker">Investment Banker</a></li>
+                            <li><a href="#" class="job-link" data-target="accountant">Accountant</a></li>
+                        </ul>
+                    </div>
+                    <div id="category-3" class="category-item">
+                        <h3>Marketing Positions</h3>
+                        <ul>
+                            <li><a href="#" class="job-link" data-target="marketing-manager">Marketing Manager</a></li>
+                            <li><a href="#" class="job-link" data-target="content-strategist">Content Strategist</a></li>
+                            <li><a href="#" class="job-link" data-target="seo-specialist">SEO Specialist</a></li>
+                        </ul>
+                    </div>
+                    <div id="category-4" class="category-item">
+                        <h3>Operations Positions</h3>
+                        <ul>
+                            <li><a href="#" class="job-link" data-target="operations-manager">Operations Manager</a></li>
+                            <li><a href="#" class="job-link" data-target="supply-chain-analyst">Supply Chain Analyst</a></li>
+                            <li><a href="#" class="job-link" data-target="project-coordinator">Project Coordinator</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyBank. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Popup Modals -->
+    <div id="software-engineer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Software Engineer</h2>
+            <div class="meta-info">
+                <p class="post-date">Posted: July 4, 2024</p>
+                <p class="author">By: John Doe</p>
+            </div><hr>
+            <div>
+                <h3>Description</h3>
+                <p>As a Software Engineer at MyBank, you will develop and maintain web applications, collaborate with cross-functional teams, and write clean, scalable code.</p>
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Develop and maintain web applications</li>
+                    <li>Collaborate with cross-functional teams</li>
+                    <li>Write clean, scalable code</li>
+                </ul>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Bachelor's degree in Computer Science or related field</li>
+                    <li>3+ years of experience in software development</li>
+                    <li>Proficiency in JavaScript, HTML, CSS, and other web technologies</li>
+                </ul>   
+            </div><br><hr>
+            <div class="additional-info">
+                <h3>Additional Information</h3>
+                <ul>
+                    <li><strong>Job Title:</strong> Software Engineer</li>
+                    <li><strong>Employment Type:</strong> Full-time</li>
+                    <li><strong>Job Category:</strong> Engineering</li>
+                    <li><strong>Industry:</strong> Banking/Finance</li>
+                </ul>
+            </div>
+                <button id="apply-button">Apply</button>
+        </div>
+    </div>
+
+    <div id="data-scientist-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Data Scientist</h2>
+            <div class="meta-info">
+                <p class="post-date">Posted: July 4, 2024</p>
+                <p class="author">By: John Doe</p>
+            </div><hr>
+            <div>
+                <h3>Description</h3>
+                <p>As a Data Scientist at MyBank, you will analyze large datasets to identify trends and patterns, build predictive models to support business decisions, and collaborate with other teams to provide data-driven insights.</p>
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Analyze large datasets to identify trends and patterns</li>
+                    <li>Build predictive models to support business decisions</li>
+                    <li>Collaborate with other teams to provide data-driven insights</li>
+                </ul>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Bachelor's degree in Data Science or related field</li>
+                    <li>3+ years of experience in data analysis</li>
+                    <li>Proficiency in Python, R, SQL, and other data analysis tools</li>
+                </ul>
+            </div><br><hr>
+            <div class="additional-info">
+                <h3>Additional Information</h3>
+                <ul>
+                    <li><strong>Job Title:</strong> Software Engineer</li>
+                    <li><strong>Employment Type:</strong> Full-time</li>
+                    <li><strong>Job Category:</strong> Engineering</li>
+                    <li><strong>Industry:</strong> Banking/Finance</li>
+                </ul>
+            </div>
+                <button id="apply-button">Apply</button>
+        </div>
+    </div>
+
+
+    <!-- Include the JavaScript file -->
+    <script src="../js/apply.js"></script>
+</body>
+</html>
