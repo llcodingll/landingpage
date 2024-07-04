@@ -1,0 +1,8 @@
+.hero {
+    background: url('../images/bbank.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
