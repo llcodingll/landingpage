@@ -1,0 +1,31 @@
+/* sns연동 로그인 */
+a {
+    text-decoration: none;
+    color: #2b3d43e0;
+}
+
+li {
+    list-style: none;
+}
+
+.sns_login {
+    padding: 25px;
+    display: flex;
+    
+}
+
+.sns_login li {
+    padding: 0 20px;
+}
+
+.sns_login a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 3px 3px 3px #003399, -3px -3px 5px #0044cc;
+}

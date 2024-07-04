@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html theme="" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MyBank</title>
+    <link rel="stylesheet" href="../css/auth.css">
+    <link rel="stylesheet" href="../css/auth3.css">
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" />
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2>Login</h2>
+            <form action="/login" method="post">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="sns_login">
+                    <li><a href=""><i class="fab fa-google"></i></a></li>
+                    <li><a href=""><i class="fab fa-apple"></i></a></li>
+                    <li><a href=""><i class="fab fa-windows"></i></a></li>
+                </div>
+                <button type="submit" class="auth-button">Login</button>
+            </form>
+            <br>
+            <p>Don't have an account? <a href="join.html">Join</a></p>
+        </div>
+    </div>
+</body>
+</html>
