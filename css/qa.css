@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin-top: 80px; /* 헤더 높이만큼 여백 추가 */
+}
+
+header .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.home a{
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 기본 텍스트 색상 상속 */
+}
+
+.home a:hover {
+    color: #F90; /* hover 시 텍스트 색상 변경 */
+}
+
+/* Header styles */
+header {
+    background: #0044cc;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between; /* 헤더 내 요소를 좌우로 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+
+header h1 {
+    float: left;
+    font-size: 24px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 서브 메뉴 */
+.service-menu {
+    display: none;
+    position: absolute;
+    background-color: #0044cc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+
+.service-menu li {
+    width: 100%;
+    margin: 0;
+}
+
+.service-menu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.service-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 서브 메뉴 호버 시 배경색 추가 */
+    border-radius: 0; /* 호버 시 모서리를 둥글게 */
+}
+
+/* 메인 메뉴 호버 시 서브 메뉴 보이기 */
+nav ul li:hover .service-menu {
+    display: block;
+}
+
+/* 로그인|회원가입 */
+#login {
+    float: right;
+    margin: 0 0 0 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    word-spacing: 5px;
+}
+#login a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+#login a:hover {
+    color: #F90;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bank {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* 최대 너비 제한 */
+    padding: 20px;
+    margin-bottom: 20px; /* 아래 여백 추가 */
+    position: relative;
+    z-index: 1; /* 검색창과 겹치지 않도록 z-index 추가 */
+}
+
+.bank .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 6px 10px;
+}
+
+.input-box i {
+    margin: 0 5px;
+    color: #999;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: nowrap; /* 줄 바꿈 금지 */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px 0 0 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003aa3; /* 호버 색상 조정 */
+    color: #f4f4f4;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    padding: 0 30px 30px 30px;
+}
+
+.left-panel {
+    position: sticky;
+    top: 120px; /* header 높이만큼 top 조정 */
+    background-color: #f8f8f8;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-panel h2 {
+    margin-bottom: 20px;
+}
+
+.left-panel hr {
+    margin-bottom: 20px;
+}
+
+.left-panel ul {
+    padding-left: 20px;
+}
+
+.left-panel li {
+    margin-bottom: 10px;
+}
+
+.left-panel li a {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+.left-panel li a:hover {
+    text-decoration: underline;
+}
+
+.right-panel {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-panel h2 {
+    margin-bottom: 20px;
+}
+
+.right-panel hr {
+    margin-bottom: 20px;
+}
+
+.right-panel ol {
+    padding-left: 20px;
+}
+
+.right-panel li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.contain {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.help {
+    text-align: center;
+    padding: 30px;
+}
