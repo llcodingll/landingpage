@@ -1,0 +1,157 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    padding: 20px;
+}
+
+.move {
+    text-align: center; /* 가운데 정렬을 위해 text-align 사용 */
+    margin: auto; /* 중앙 정렬을 위해 margin auto 사용 */
+    width: 100%; /* 너비를 100%로 설정하여 전체 너비를 차지하도록 함 */
+    background-color: #f4f4f4; /* 배경색 지정 */
+    padding: 10px 0; /* 위아래 여백 설정 */
+}
+
+.move ul {
+    list-style-type: none; /* 리스트 스타일 제거 */
+    display: inline-block; /* 인라인 블록 요소로 표시하여 가운데 정렬을 유지하면서 너비 자동 조정 */
+}
+
+.move ul li {
+    display: inline; /* 인라인 요소로 표시하여 가로로 배열 */
+    margin-right: 20px; /* 각 메뉴 항목 사이 여백 설정 */
+}
+
+.move ul li:last-child {
+    margin-right: 0; /* 마지막 메뉴 항목의 여백 제거 */
+}
+
+.move ul li a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #333; /* 링크 텍스트 색상 지정 */
+    padding: 10px 15px; /* 패딩 설정 */
+    display: inline-block; /* 인라인 블록 요소로 표시하여 패딩 적용 */
+    transition: all 0.3s ease; /* 링크에 호버 효과 적용 */
+}
+
+.move ul li a:hover {
+    background-color: #ddd; /* 호버 시 배경색 변경 */
+    color: #0044cc; /* 호버 시 텍스트 색상 변경 */
+    border-radius: 5px; /* 호버 시 모서리를 둥글게 */
+}
+
+header {
+    background: #0044cc;
+    color: #fff;
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+
+/* Hero section */
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero p:hover, h2:hover {
+    color: #002266;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0044cc;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #0044cc;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #003399;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Hover effect for titles */
+.section h2:hover {
+    color: #002266; /* Darker shade of the main color */
+    cursor: pointer;
+}
+
+/* Login/Signup */
+#login {
+    float: right;
+    margin-right: 20px;
+}
+
+#login a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#login a:hover {
+    color: #F90; /* Lighter shade for hover */
+}
